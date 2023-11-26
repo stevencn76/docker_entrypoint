@@ -9,4 +9,6 @@ RUN pip3 install -r requirements.txt
 
 COPY app.py /opt/app.py
 
-ENTRYPOINT python3 /opt/app.py
+WORKDIR /opt/
+
+ENTRYPOINT python3 app.py
