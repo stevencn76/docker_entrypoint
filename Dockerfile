@@ -11,4 +11,6 @@ COPY app.py /opt/app.py
 
 WORKDIR /opt/
 
-CMD ["python3", "app.py", "p1", "p2"]
+ENTRYPOINT ["python3", "app.py", "p1", "p2"]
+#CMD ["python3", "app.py", "p1", "p2"]
+
